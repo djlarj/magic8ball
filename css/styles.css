@@ -25,9 +25,11 @@ body {
 }
 
 #number8 {
+    width: 174px;
+    height: 174px;
     color: #000;
     font-size: 11em;
-    margin: -55px 40px;
+    margin: -55px auto;
 }
 
 #answers {  
