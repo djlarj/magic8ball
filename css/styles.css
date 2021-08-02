@@ -33,8 +33,10 @@ body {
 }
 
 #answers {  
+    width: 174px;
+    height: 174px;
     color: #0000ff;
     font-size: 20px;
     padding: 30px;
-    margin-top: 70px;
+    margin: -100px auto;
 }  
