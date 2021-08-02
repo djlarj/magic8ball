@@ -1,11 +1,18 @@
+body {
+    background-image: url(../img/sharon-mccutcheon-TMwHpCrU8D4-unsplash.jpg);
+}
+
+#question {
+    width: 298px;
+    height: 38px;
+}
+
 #eightBallOuter {
     width: 350px;
     height: 350px;
     background-color: #000;
     border: 1px solid #000;
     border-radius: 50%;
-    margin: 0 auto;
-    margin-top: 25px;
 }
 
 #eightBallInner {
@@ -22,3 +29,10 @@
     font-size: 11em;
     margin: -55px 40px;
 }
+
+#answers {  
+    color: #0000ff;
+    font-size: 20px;
+    padding: 30px;
+    margin-top: 70px;
+}  

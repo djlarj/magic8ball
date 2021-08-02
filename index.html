@@ -13,22 +13,26 @@
   </head>
   <body>
     <div class="container text-center m-auto" id="content">
-      <h1>The Magic 8 Ball</h1>
+      <h1 class="my-5">The Magic 8 Ball</h1>
   
       <div id="questionField">
         <h3>"Ask me anything!"</h3>
         <input type="text" name='question' id="question" placeholder="Type your question here...">
-        <button type="button" class="btn btn-dark" id="submit">ask</button>
+        <button type="button" class="btn btn-dark" id="submit">Ask</button>
       </div>
 
-      <div id="eightBallOuter">
+      <div class="mx-auto mt-5" id="eightBallOuter">
         <div id="eightBallInner">
           <p id="number8">8</p>
-          <p id="answers"></p>
+          <p class="font-weight-bold" id="answers"></p>
         </div>
       </div>
 
-  </div>
+    </div>
+
+    <footer class="container text-center mt-5">
+      Background Image Photo by <a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sharon McCutcheon</a> on <a href="https://unsplash.com/s/photos/magic-8-ball?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </footer>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
