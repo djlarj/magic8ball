@@ -2,10 +2,20 @@ body {
     background-image: url(../img/sharon-mccutcheon-TMwHpCrU8D4-unsplash.jpg);
 }
 
+#questionText {
+    width: 350px;
+    color: #6600cc;
+    margin: auto;
+}
+
 #question {
     width: 298px;
     height: 38px;
 }
+
+/* #restart {
+    margin: auto;
+} */
 
 #eightBallOuter {
     width: 350px;
@@ -40,3 +50,11 @@ body {
     padding: 30px;
     margin: -100px auto;
 }  
+
+footer{
+    font-size: 12px;
+}
+
+.link1 {
+    color: #004d99;
+}
