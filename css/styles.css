@@ -2,6 +2,24 @@ body {
     background-image: url(../img/sharon-mccutcheon-TMwHpCrU8D4-unsplash.jpg);
 }
 
+.shake{
+    animation: shake 1s;
+}
+
+  @keyframes shake {
+    0% { transform: translate(4px, 4px) rotate(0deg); }
+    10% { transform: translate(-4px, -4px) rotate(-1deg); }
+    20% { transform: translate(-7px, 0px) rotate(1deg); }
+    30% { transform: translate(7px, 4px) rotate(0deg); }
+    40% { transform: translate(4px, -4px) rotate(1deg); }
+    50% { transform: translate(-4px, 4px) rotate(-1deg); }
+    60% { transform: translate(-7px, 4px) rotate(0deg); }
+    70% { transform: translate(7px, 4px) rotate(-1deg); }
+    80% { transform: translate(-4px, -4px) rotate(1deg); }
+    90% { transform: translate(4px, 4px) rotate(0deg); }
+    100% { transform: translate(4px, -4px) rotate(-1deg); }
+  }
+
 #questionText {
     width: 350px;
     color: #6600cc;

@@ -21,12 +21,16 @@ const possibleAnswers = [
     'Very doubtful'
 ];
 
+function shake(){
+    const ball= document.getElementById("eightBallOuter");
+    ball.classList.add("shake");
+    setTimeout(function(){ ball.classList.remove("shake"); }, 1500);
+ };
+
 window.onload = function () {
     const AskQuestion = document.getElementById('AskQuestion');
-    const ShowQuestion = document.getElementById('ShowQuestion');
     const questionText = document.getElementById('questionText');
     const restart = document.getElementById('restart');
-    const eightBallOuter = document.getElementById('eightBallOuter');
     const number8 = document.getElementById('number8');
     const answers = document.getElementById('answers');
     const question = document.getElementById('question');
@@ -34,7 +38,7 @@ window.onload = function () {
     restart.style.display = 'none';
 
     submit.addEventListener('click', function() {
-        if (question.value.length < 1) {
+        if (question.value.length < 6) {
             alert('Please type your question if you want an answer!');
         } else {
             AskQuestion.style.display = 'none';
@@ -42,7 +46,7 @@ window.onload = function () {
             number8.innerText = '';
             questionText.innerText = question.value;
             let response = Math.floor(Math.random() * Math.floor(possibleAnswers.length));
-            answers.innerText = possibleAnswers[response];
+            setTimeout(function() {answers.innerText = possibleAnswers[response];}, 1500);
         }
     });
 
