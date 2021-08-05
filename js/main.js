@@ -21,10 +21,18 @@ const possibleAnswers = [
     'Very doubtful'
 ];
 
+const input = document.getElementById('question');
+input.addEventListener('keyup', function(event) {
+  if (event.code === 'Enter') {
+   event.preventDefault();
+   document.getElementById('submit').click();
+  }
+});
+
 function shake(){
-    const ball= document.getElementById("eightBallOuter");
-    ball.classList.add("shake");
-    setTimeout(function(){ ball.classList.remove("shake"); }, 1500);
+    const ball= document.getElementById('eightBallOuter');
+    ball.classList.add('shake');
+    setTimeout(function(){ ball.classList.remove('shake'); }, 1500);
  };
 
 window.onload = function () {
